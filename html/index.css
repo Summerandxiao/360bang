@@ -1,0 +1,510 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	display: block;
+}
+
+header {
+	height: 32px;
+	background: #F7F7F7;
+	color: #666;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.top {
+	width: 1210px;
+	margin: 0 auto;
+	height: 32px;
+	line-height: 32px;
+}
+
+.top li {
+	font-size: 12px;
+	margin-right: 10px;
+	padding-right: 10px;
+	background: url(../img/xian.jpg) no-repeat right center;
+}
+
+.top li a {
+	color: #666;
+}
+
+.top ul {
+	float: left;
+}
+
+.top ul li:nth-child(1) {
+	color: green;
+	font-size: 14px;
+	background: none;
+}
+
+.top ul li:nth-child(2) {
+	font-size: 10px;
+	padding-right: 13px;
+}
+
+.top ul li:nth-child(3) {
+	background: none;
+}
+
+.top ol {
+	float: right;
+}
+
+.top ol li:last-child {
+	background: none;
+}
+
+
+/*导航栏部分*/
+
+nav {
+	height: 80px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+nav img {
+	float: left;
+	margin-top: 22px;
+}
+
+nav ul {
+	margin-top: 22px;
+	float: right;
+}
+
+nav ul li:nth-child(1) {
+	background: url("https://p.ssl.qhimg.com/t01198d7629a60c4940.png") no-repeat right top;
+}
+
+nav ul li:nth-child(1):hover {
+	background: #f4f4f4 url("https://p.ssl.qhimg.com/t01198d7629a60c4940.png") no-repeat right top;
+}
+
+nav ul li {
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+}
+
+nav ul li:hover {
+	background: #f4f4f4;
+}
+
+nav ul li a {
+	padding: 0 18px;
+	color: #666;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+}
+
+
+/*广告*/
+
+.banner {
+	height: 340px;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	
+	overflow: hidden;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.banner ol:nth-child(1) {
+	position: absolute;
+	width: 1000%;
+	top:0;
+	left:0;
+}
+.ind{
+	position:absolute;
+	margin-left: 930px;
+    margin-top: 310px;
+	
+}
+.ind li{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:white;
+	margin-right:20px;
+	cursor: pointer;
+}
+.active{
+	background-color:grey;
+}
+.banner ul {
+	height: 350px;
+	width: 235px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.banner ul li {
+	font-size: 16px;
+	color: #fff;
+	line-height: 85px;
+	cursor: pointer;
+	border-bottom: 1px solid #9A9895;
+	height: 84px;
+	width: 235px;
+	background: url("https://p.ssl.qhimg.com/t01280de86e9d9dc470.png") no-repeat left -8px;
+}
+
+.banner ul li p {
+	padding-left: 95px;
+}
+
+.banner ul li:nth-child(1) {
+	background-position: left -205px;
+}
+
+.banner ul li:nth-child(2) {
+	background-position: left -306px;
+}
+
+.banner ul li:nth-child(4) {
+	border: none;
+	background-position: left -103px;
+}
+
+
+/*主要图片部分*/
+
+section {
+	height: 1340px;
+	width: 100%;
+	background: #F7F7F7;
+}
+
+section ul {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.item_t {
+	height: 166px;
+	width: 1200px;
+	margin: 10px auto 20px;
+}
+
+.item_t li {
+	border: 0;
+	width: 299px;
+	border-right: 1px solid #F7F7F7;
+}
+
+.item_t li:nth-child(4) {
+	border: none;
+}
+
+.item_s {
+	width: 1210px;
+	margin: 0 auto;
+	height: 350px;
+}
+
+.item_s h2 {
+	line-height: 2;
+	padding-top: 20px;
+	color: #5A5A5A;
+	font-size: 24px;
+}
+
+.item_s h2 a {
+	font-weight: normal;
+	font-size: 16px;
+	color: #666;
+	padding-right: 20px;
+	float: right;
+	background: url("https://p.ssl.qhimg.com/t0142af699131aff09e.png") no-repeat right center;
+}
+
+.item_s span {
+	display: block;
+	color: red;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+#remen {
+	width: 200px;
+	height: 301px;
+	float: left;
+}
+#sp {
+	width: 1010px;
+	float: right;
+}
+#sp li:nth-child(1) img{
+	margin-left:20px;
+}
+.item_s li {
+	background: #fff;
+	border: 0;
+	width: 199px;
+	border-right: 1px solid #F7F7F7;
+	height: 301px;
+	text-align: center;
+}
+
+.item_s li img {
+	margin: 46px 0 25px 55px;
+	height: 160px;
+}
+
+.item_s li:last-child {
+	border: none;
+}
+
+
+.item_f {
+	width: 1200px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.item_f h2 {
+	line-height: 2;
+	padding-top: 20px;
+	color: #5A5A5A;
+	font-size: 24px;
+}
+
+.item_f ul {
+	width: 1200px;
+	height: 300px;
+	background: white;
+}
+
+.item_f ul>li {
+	height: 300px;
+	width: 299px;
+	border-right: 1px solid #F7F7F7;
+}
+
+.item_f ul>li li:last-child {
+	border: none;
+}
+
+.item_f ul>li img {
+	margin: 35px 25px;
+}
+
+.item_f ul>li a {
+	margin-left: 35px;
+	color: #5a5a5a;
+	font-size: 14px;
+	display: block;
+	width: 251px;
+	text-align: left;
+}
+
+.item_f ul>li h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 30px 30px 0;
+	color: #5A5A5A;
+}
+
+.item_f ul>li ol {
+	padding-left: 30px;
+}
+
+.item_f ul>li ol>li {
+	list-style-type: disc;
+	height: 49px;
+	font-size: 14px;
+	line-height: 49px;
+	border-bottom: 1px solid #F7F7F7;
+	width: 245px;
+	/* width:250px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;*/
+}
+
+.item_h {
+	width: 1210px;
+	margin: 0 auto;
+	height: 350px;
+}
+
+.item_h h2 {
+	line-height: 2;
+	padding-top: 20px;
+	color: #5A5A5A;
+	font-size: 24px;
+}
+
+.item_h h2 a {
+	font-weight: normal;
+	font-size: 16px;
+	color: #666;
+	padding-right: 20px;
+	float: right;
+	background: url("https://p.ssl.qhimg.com/t0142af699131aff09e.png") no-repeat right center;
+}
+
+.item_h span {
+	display: block;
+	color: red;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+#ypjx {
+	width: 200px;
+	float:left;
+	height: 301px;
+}
+#space{
+	width:1010px;
+	float:right;
+}
+
+
+.item_h li {
+	background: #fff;
+	border: 0;
+	width: 199px;
+	border-right: 1px solid #F7F7F7;
+	height: 301px;
+	text-align: center;
+}
+
+.item_h li img {
+	margin: 46px 15px 20px;
+	width: 160px;
+	height: 160px;
+}
+
+.item_h li:last-child {
+	border: none;
+}
+
+footer {
+	border-top: 1px solid #E5E5E5;
+	width: 100%;
+	background: #FAFAFA;
+	color: #888;
+}
+
+.shopinfo {
+	border-bottom: 1px solid #eee;
+	font-family: "微软雅黑", "宋体";
+	margin: 0 auto;
+	width: 980px;
+	height: 120px;
+}
+
+.shopinfo ul>li {
+	margin-top: 20px;
+	height: 10px;
+	width: 245px;
+}
+
+.shopinfo ul>li ol h3 {
+	font-size: 16px;
+	font-weight: 700;
+	height: 36px;
+	line-height: 36px;
+}
+
+.shopinfo ul>li ol a {
+	font-size: 12px;
+	line-height: 26px;
+	color: #888;
+}
+
+.shopinfo ul>li ol li {
+	padding-right: 5px;
+}
+
+.shopinfo ul>li ol li:nth-child(1) {
+	height: 42px;
+	width: 42px;
+	background: url("https://p.ssl.qhimg.com/t01f943ad69c4601e97.gif") no-repeat left top;
+}
+
+.connect {
+	width: 430px;
+	margin: 20px auto;
+	font-size: 12px;
+	color: #888;
+	padding-bottom: 50px;
+}
+
+.connect ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.connect p {
+	text-align: center;
+	margin-top: -12px;
+	margin-bottom: 10px;
+}
+
+.connect a {
+	color: #888;
+}
+
+.connect ol {
+	display: flex;
+	justify-content: space-around;
+}
+
+.view {
+	height: 195px;
+	width: 71px;
+	background: url("http://p5.qhimg.com/t0113dfdd3937c1f092.png") no-repeat right top;
+	position: fixed;
+	top: 140px;
+	right: 0;
+}
+
+.gotop {
+	width: 27px;
+	height: 74px;
+	background: url("https://p.ssl.qhimg.com/t0133a58c2890e5177f.png") no-repeat left top;
+	position: fixed;
+	right: 10px;
+	bottom: 42px;
+	cursor: pointer;
+}
+
+.gotop:hover {
+	background-position: left -75px;
+}
+
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>同城帮</title>
+		<link rel="stylesheet" href="index.css" />
+		<script src="baiduTemplate.js"></script>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<header>
+			<div class="top">
+				<ul>
+					<li>北京</li>
+					<li>
+						<a href="#">[切换城市]</a>
+					</li>
+					<li>
+						<a href="#">同城帮首页</a>
+					</li>
+				</ul>
+				<ol>
+					<li>
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">注册</a>
+					</li>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li>
+						<a href="#">在线客服（9:00-21:00）</a>
+					</li>
+					<li>
+						<a href="#">客户服务</a>
+					</li>
+					<li>
+						<a href="#">论坛</a>
+					</li>
+					<li>
+						<a href="#" style="color:red;">投诉建议</a>
+					</li>
+				</ol>
+			</div>
+		</header>
+		<!--导航-->
+		<nav>
+			<img src="img/logo.jpg" alt="" />
+			<ul>
+				<li>
+					<a href="#">二手优品</a>
+				</li>
+				<li>
+					<a href="#">二手优品</a>
+				</li>
+				<li>
+					<a href="#">二手优品</a>
+				</li>
+				<li>
+					<a href="#">二手优品</a>
+				</li>
+				<li>
+					<a href="#">二手优品</a>
+				</li>
+				<li>
+					<a href="#">二手优品</a>
+				</li>
+			</ul>
+		</nav>
+		<!--轮播图-->
+		<div class="banner">
+			<ol id="lbt">
+			
+			</ol>
+			<ol class="ind">
+				<li class="active"></li>
+				<li></li>
+			</ol>
+			<ul>
+				<li>
+					<p>卖手机/电脑</p>
+				</li>
+				<li>
+					<p>买二手机</p>
+				</li>
+				<li>
+					<p>修手机/Pad</p>
+				</li>
+				<li>
+					<p>修电脑</p>
+				</li>
+			</ul>
+		</div>
+		<script type="text/html" id="lbtp">
+			
+				<%for(var i = 0 ; i < advList.length ; i++){%>
+				<li>
+					<img src="<%=advList[i].advPic%>" alt="" />
+				</li>
+				<%}%>
+			
+		</script>
+		<!--图片-->
+		<section>
+			<div class="item_t">
+				<ul id="lbtd">
+					
+				</ul>
+			</div>
+			<script type="text/html" id="dtp">
+			<%for(var i = 0 ; i < advList.length ; i++){%>
+			        <li>
+						<img src="<%=advList[i].advPic%>" alt="" />
+					</li>
+			<%}%>		
+			</script>
+			<div class="item_s">
+				<h2>热门手机回收<a href="#">查看更多</a></h2>
+				<div id="remen">
+				</div>
+				
+				<ul id="sp">
+					
+				</ul>
+			</div>
+			<script type="text/html" id="retp">
+			<%for(var i = 0 ; i < advList.length ; i++){%>
+			     <img src="<%=advList[i].advPic%>" alt="" />
+			<%}%>
+			</script>
+			<script type="text/html" id="sptp">
+		    <%for(var i = 0 ; i < gdsList.length ; i++){%>
+					<li><img src="<%=gdsList[i].gdsPic%>" alt="" />
+						<p><%=gdsList[i].gdsName%></p>
+					</li>
+			<%}%>		
+			</script>
+		<!--优品精选-->
+			<div class="item_h" style="margin-top:20px;">
+				<h2>优品精选<a href="#">查看更多</a></h2>
+				<div id="ypjx">
+				
+				</div>
+				
+				<ul id="spce">
+					
+				</ul>
+				
+			</div>
+			<script type="text/html" id="yptp">
+				<%for(var i = 0 ; i < advList.length ; i++){%>
+			     <img src="<%=advList[i].advPic%>" alt="" />
+			<%}%>
+			</script>
+			<script type="text/html" id="prtp">
+				<%for(var i = 0; i < gdsList.length ; i++){%>
+				<li><img src="<%=gdsList[i].gdsPic%>" alt="" />
+						<p><%=gdsList[i].gdsName%></p>
+						<span>￥<%=gdsList[i].gdsPrice%></span>
+					</li>
+				<%}%>
+			</script>
+			<!--更多报道-->
+			<div class="item_f" style="margin-top:20px;">
+				<h2>更多报道</h2>
+				<ul>
+					<li>
+						<img src="img/1.png" alt="" />
+						<a href="#">手机中的隐私安全：揭秘电子产品回收的“最后一公里”</a>
+					</li>
+					<li>
+						<img src="img/2.png" alt="" />
+						<a href="#">专访360同城帮CEO郑立群：如何解决手机回收中隐私安全的痛点</a>
+					</li>
+					<li>
+						<h3>更多报道</h3>
+						<ol>
+							<li>同城帮携手支付宝芝麻信用开展租...</li>
+							<li>同城帮让回忆有价值，让回收更安全</li>
+							<li>同城帮携手支付宝芝麻信用开展租机...</li>
+							<li>同城帮携手支付宝芝麻信用开展租机...</li>
+						</ol>
+					</li>
+					<li>
+						<img src="https://p1.ssl.qhimg.com/t01f75cb0a28f5abd98.png" alt="" />
+						<a href="#">同城帮第三代隐私粉碎技术</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<div class="shopinfo">
+				<ul>
+					<li>
+						<ol>
+							<li></li>
+							<li>
+								<h3>购物指南</h3>
+								<a href="#">购物流程</a><br />
+								<a href="#">帮助文档</a>
+							</li>
+						</ol>
+
+					</li>
+					<li>
+						<ol>
+							<li style="background-position:left -44px;"></li>
+							<li>
+								<h3>支付方式</h3>
+								<a href="#">在线支付、当面付款</a>
+							</li>
+						</ol>
+
+					</li>
+					<li>
+						<ol>
+							<li style="background-position:left -89px;"></li>
+							<li>
+								<h3>售后服务</h3>
+								<a href="#">投资建议</a><br />
+								<a href="#">售后说明</a>
+							</li>
+						</ol>
+
+					</li>
+					<li>
+						<ol>
+							<li style="background-position:left -176px;"></li>
+							<li>
+								<h3>商家合作</h3>
+								<a href="#" style="color:#239BF8;">加盟同城帮</a><br />
+								<a href="#">新闻采访/跨界合作</a>
+							</li>
+						</ol>
+
+					</li>
+				</ul>
+			</div>
+			<div class="connect">
+				<ul>
+					<li>客服电话：4000-399-360 / 010-53767360</li>
+					<li><a href="#">投诉建议</a></li>
+					<li><a href="#">网站地图</a></li>
+				</ul><br />
+				<p>Copyright &copy; 2005-2019 &nbsp;&nbsp; 360.CN &nbsp;&nbsp; All Rights Reserved &nbsp;&nbsp; 360安全中心</p>
+				<ol>
+					<li><a href="#">京ICP备08010314号-19  </a></li>
+					<li> 京公网安备110000000006号</li>
+				</ol>
+			</div>
+		</footer>
+		<div class="view">
+			
+		</div>
+		<div class="gotop">	</div>
+	</body>
+
+</html>
+<script src="sport.js"></script>
+<script>
+	init();
+	function init(){
+		//轮播图
+		getAdvList(1,2,function(obj){
+			//console.log(obj.advList)
+			//console.log(obj.advList[1].advPic)
+			document.querySelector("#lbt").innerHTML = baidu.template("lbtp",obj)
+	
+		});
+		//轮播图底部
+		getAdvList(2,4,function(obj){
+		 document.querySelector("#lbtd").innerHTML = baidu.template("dtp",obj)
+		});
+		//热门回收
+		getAdvList(3,1,function(obj){
+		 document.querySelector("#remen").innerHTML = baidu.template("retp",obj)
+		});
+		//热门回收
+		getGdsList(1,5,function(obj){
+		//console.log(obj)
+		document.querySelector("#sp").innerHTML = baidu.template("sptp",obj);
+		});
+		//优品精选
+		getAdvList(4,1,function(obj){
+			document.querySelector("#ypjx").innerHTML = baidu.template("yptp",obj)
+		});
+		getGdsList(2,5,function(obj){
+		//console.log(obj)
+		document.querySelector("#spce").innerHTML = baidu.template("prtp",obj);
+		});
+		
+	}
+	
+	//获取广告信息
+	function getAdvList(advType,limit,cb){
+		var xhr = new XMLHttpRequest();
+		xhr.open("get","/advInfoByType?advType="+advType+"&limit="+limit);
+		xhr.send();
+		xhr.onload = function(){
+			var obj = JSON.parse(xhr.responseText);
+		  //  console.log(obj)
+		    cb(obj)
+		}
+	}
+	//获取商品信息
+	function getGdsList(order,limit,cb){
+		var xhr = new XMLHttpRequest();
+		xhr.open("get","/goodsLimit?order="+order+"&limit="+limit);
+		xhr.send();
+		xhr.onload = function(){
+			var obj = JSON.parse(xhr.responseText);
+			cb(obj)
+		}
+	}
+	//轮播图
+	
+	
+	 
+	var oOl =document.getElementById("lbt")
+	var olist =  document.querySelector(".ind").children
+	var index = 0
+	var timer = null
+	timer = setInterval(auto,2000) ;
+	
+	function auto(){
+		index++
+		for( var i = 0 ; i < olist.length ; i++ ){
+				olist[i].className = ""
+		  }    
+			if( index == olist.length  ){
+				 index = 0
+				
+			}
+			olist[index].className = "active";
+		    startMove(oOl, -index*1200, "left");
+		       
+	}
+	 
+	for( let i = 0 ; i < olist.length ; i ++ ){
+		olist[i].onmouseenter = function(){
+			clearInterval(timer)
+			index = i-1
+			auto()
+			
+		}
+		olist[i].onmouseleave = function(){
+			timer = setInterval( auto , 2000 )
+		}
+	}
+</script>
